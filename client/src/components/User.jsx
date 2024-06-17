@@ -4,7 +4,7 @@ const User = () => {
   const [user,setUser] = useState('');
   const sendNotification = async()=>
   {
-    const response = await axios.post("http://localhost:3001/orders",{user});
+    const response = await axios.post("http://localhost:3001/api/v1/users/orders",{user});
     console.log("response",response);
     setUser('')
   }
